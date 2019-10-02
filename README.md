@@ -1,2 +1,2 @@
-# Interview task Tinkoff
- Решение задач с собеседования Тинькофф
+# Interview tasks
+ Решение задач с собеседования
