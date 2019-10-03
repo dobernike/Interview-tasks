@@ -26,6 +26,9 @@
         "testPathIgnorePatterns": [
             "<rootDir>/(node_modules|.vscode)/"
         ],
+        "transformIgnorePatterns": [
+            "/node_modules/(?!test-component).+\\.js$"
+        ],
         "collectCoverageFrom": [
             ".{js}"
         ]
@@ -41,13 +44,14 @@
     },
     "homepage": "https://github.com/dobernike/Interview-task-Tinkoff#readme",
     "devDependencies": {
-        "eslint-config-prettier": "^6.3.0",
-        "eslint-plugin-prettier": "^3.1.1",
+        "@babel/plugin-transform-modules-commonjs": "^7.6.0",
         "eslint-config-airbnb": "^18.0.1",
         "eslint-config-node": "^4.0.0",
+        "eslint-config-prettier": "^6.3.0",
         "eslint-plugin-import": "^2.18.2",
         "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-node": "^10.0.0",
+        "eslint-plugin-prettier": "^3.1.1",
         "eslint-plugin-react": "^7.14.3",
         "eslint-plugin-react-hooks": "^1.7.0",
         "eslint-plugin-sonarjs": "^0.4.0",
