@@ -27,7 +27,7 @@
             "<rootDir>/(node_modules|.vscode)/"
         ],
         "collectCoverageFrom": [
-            "src/components/**/*.{js}"
+            ".{js}"
         ]
     },
     "repository": {
