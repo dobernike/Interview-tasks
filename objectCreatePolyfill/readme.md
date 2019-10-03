@@ -1,0 +1,1 @@
+Polyfill для Object.create.
