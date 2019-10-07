@@ -4,7 +4,7 @@
     "description": "Решение задач с собеседования Тинькофф",
     "main": "index.js",
     "scripts": {
-        "test": "jest",
+        "test": "jest --watch",
         "lint:write": "eslint --fix",
         "prettier": "prettier --write src/**/*.js"
     },
