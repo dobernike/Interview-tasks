@@ -8,6 +8,244 @@
 
 Здесь собраны самые популярные вопросы, задаваемые на русскоязычных собеседованиях front-end разработчиков на React.js. Тематика вопросов включает в себя как основы JavaScript и веб-технологий так и глубокое понимание работы React.js и смежных технологий (Redux, MobX и прочего).
 
+**Вопросы для проведения собеса React M1**:
+
+<details>
+  <summary>Вопросы для проведения собеса React M1</summary>
+  <div>
+    <br/>
+    <p>
+      Является react element синонимом для react компонента нет, компонент - это класс или функция, а элемент это то что возвращается из компонента, объект выражающий узел Virtual Dom https://www.freecodecamp.org/news/react-interview-question-what-getsrendered-in-the-browser-a-component-or-an-element-1b3eac777c85/
+    </p>
+    <br/>
+    <p>
+     Что такое порталы, для чего нужны https://github.com/sudheerj/reactjsinterview-questions#what-are-portals-in-react
+       </p>
+    <br/>
+    <p>
+     Что такое React Fragment. Какие у него допустимые атрибуты?
+       </p>
+    <br/>
+    <p>
+      Какие ограничения при использовании HOC?  https://github.com/sudheerj/reactjs-interview-questions#what-are-thelimitations-with-hocs 
+      - Не рекомендуется объявлять внутри render 
+      - По умолчанию статические методы не копируются 
+      - По умочанию ref не пропускаются через HOC 
+        </p>
+    <br/>
+    <p>
+      Какие есть фазы обработки изменений в React https://techdoma.in/article/what-are-render-phase-and-commit-phase-inreact/ 
+      
+<b>Render phase</b>
+       Render phase is when React does DOM diffing and comparing the previous render view with the current one for determining the changes. React calls following methods during render phase
+
+      - constructor
+      - componentWillMount
+      - componentWillReceiveProps
+      - componentWillUpdate
+      - getDerivedStateFromProps
+      - shouldComponentUpdate
+      - render
+      - setState
+
+<b>Commit phase</b> In this phase, React actually commits the changes to DOM. Some of the methods called during commit phase in React are as follows
+
+-   componentDidMount
+-   componentDidCatch
+-   componentDidUpdate
+
+https://medium.com/@guptagaruda/react-hooks-understanding-componentre-renders-9708ddee9928 </p> <br/>
+
+<p>
+
+Что такое React Fiber
+
+Это новая архитектура https://github.com/sudheerj/reactjs-interviewquestions#what-is-react-fiber Это структура данных (объект) в которой которая может отслеживать своё состояние 
+
+</p>
+</br>
+<p>
+Почему функциональная парадигма программирования так популярна среди разработчиков React
+
+Компонент как данные функций https://github.com/reactjs/reactbasic#transformation Высокоуровневые абстракции, которые позволяют писать декларативный код Переиспользование функций. создание больших программ с помощью маленьких повторно используемых предсказуемых чистых функций
+
+https://frontender.info/the-two-pillars-of-javascript-pt-2-functionalprogramming/ Идемпотентность: При одинаковых входных параметрах, чистая функция всегда вернет тот же самый результат, независимо от того сколько раз она была вызвана
+
+</p>
+</br>
+<p>
+Что такое redux. Зачем нужен.
+
+Хорошо рассказать про односторонний поток данных. Что по умолчанию он синхронен. Асинхронность достигается за счет использования redux-thunk, redux-saga
+
+</p>
+</br>
+
+<p>
+Раcскажи про code-splitting Как добиться
+
+https://github.com/sudheerj/reactjs-interview-questions#what-is-codesplitting https://github.com/jamiebuilds/react-loadable синтаксис динамического импорта: import(). React.lazy & Suspens
+
+react loadable для SSR (loader)
+
+</p>
+</br>
+<p>
+Что такое ReactDOMServer. Зачем нужен. Зачем нужен метод renderToNodeStream
+
+rehydrate?
+
+</p>
+</br>
+<p>
+Как мы можем обращаться к серверу. Варианты запроса данных с сервера. 
+</p>
+</br>
+
+<p>
+какая разница между thorttle и debounce
+
+debounce (отработка только после таймаута, который обновляется при повторном вызове) throttle (отработка не чаще чем таймаут, который не обновляется)
+
+</p>
+</br>
+<p>
+Можно ли отменять запросы к серверу, например запрос подсказок по мере ввода данных пользователем
+
+да, в xhr ... в fetch abort.controller()
+
+</p>
+</br>
+<p>
+Какой правильный способ организации файлов в проекте. Какого ты придерживаешься?
+
+Хорошо бы услышать про duck typing \* - https://github.com/benawad/destiny
+
+</p>
+</br>
+<p>
+ Стили кода, что такое зачем нужно. https://hackernoon.com/lessonslearned-common-react-code-smells-and-how-to-avoid-them-f253eb9696a4 
+</p>
+</br>
+<p>
+Какие структуры данных ты знаешь
+
+бинарное дерево, куча, стек, очередь, список (двухсвязанный и односвязанный), граф (грокаем алгоритмы)
+
+а в js можно их?
+
+</p>
+</br>
+<p>
+Что такое сложность алгоритмов? Какая бывает, как можно определить? 
+- Ω - в лучшем случае 
+- Θ - в среднем 
+- О - в худшем 
+https://www.bigocheatsheet.com/
+</p>
+</br>
+<p>
+Тестирование. Зачем нужно. Какие есть типы, что чаще используется. Какие библиотеки используем
+</p>
+</br>
+<p>
+Typescript зачем нужен, какие приносит плюсы, какие минусы
+
+The Benefits of using TypeScript are:
+
+TypeScript is fast, simple, easy to learn and runs on any browser or JavaScript engine.
+
+It is similar to JavaScript and uses the same syntax and semantics.
+
+This helps backend developers write front-end code faster.
+
+You can call the TypeScript code from an existing JavaScript code. Also, it works with existing JavaScript frameworks and libraries without any issues.
+
+The Definition file, with .d.ts extension, provides support for existing JavaScript libraries like Jquery, D3.js, etc.
+
+It includes features from ES6 and ES7 that can run in ES5-level JavaScript engines like Node.js.
+
+TypeScript has the following disadvantages:
+
+TypeScript takes a long time to compile the code.
+
+If we run the TypeScript application in the browser, a compilation step is required to transform TypeScript into JavaScript.
+
+Web developers are using JavaScript for decades and TypeScript doesn’t bring anything new.
+
+To use any third party library, the definition file is a must.
+
+Quality of type definition files is a concern
+
+</p>
+</br>
+<p>
+Что такое дженерики в TS
+</p>
+</br>
+<p>
+Какие принципы ооп можно реализовать в ts
+</p>
+</br>
+<p>
+Typescript Отличие interfaces от types когда что применять
+
+Unlike an interface declaration, which always introduces a named object type, a type alias declaration can introduce a name for any kind of type, including primitive, union, and intersection types.
+
+By using type instead of interface the following capabilities are lost:
+
+-   An interface can have multiple merged declarations, but a type alias for an object type literal cannot.
+-   An interface can be named in an extends or implements clause, but a type alias for an object type literal cannot
+</p>
+</br>
+<p>
+Git. Какая разница между fork, clone, branch, checkout -b
+
+-   A fork is a remote, server-side copy of a repository, distinct from the original. A fork isn't a Git concept really, it's more a political/social idea.
+-   A clone is not a fork; a clone is a local copy of some remote repository. When you clone, you are actually copying the entire source repository, including all the history and branches.
+-   A branch is a mechanism to handle the changes within a single repository in order to eventually merge them with the rest of code. A branch is something that is within a repository. Conceptually, it represents a thread of development
+</p>
+</br>
+<p>
+Задачка на каррирование
+
+Простая
+
+```js
+add(1)(2)(); //3
+```
+
+Средняя
+
+```js
+add(1)(2); // 3
+add(1)(2)(3); // 6
+add(1)(2)(3)(4); // 10
+add(1)(2)(3)(4)(5); // 15
+```
+
+Сложная
+
+```js
+const addTwo = add(2);
+addTwo; // 2
+addTwo + 5; // 7
+addTwo(3); // 5
+addTwo(3)(5); // 10
+```
+
+</p>
+</br>
+<p>
+Вопросы со 🌟
+
+Как реакт обходит дерево компонентов? Используется связный список, чтобы избежать рекурсивного обхода https://indepth.dev/the-how-and-why-on-reacts-usage-of-linked-list-in-fiberto-walk-the-components-tree/
+
+</p>
+</br>
+  </div>
+</details>
+
 **JavaScript**:
 
 <details>
