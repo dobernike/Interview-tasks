@@ -172,3 +172,17 @@ Add to queue        array.unshift();
 ---------------------------------------
 Remove from queue   array.pop();
 ```
+
+### Stack
+
+add RecordFirst -> remove RecordFirst
+
+FILO (First In Last Out)
+
+#### methods
+
+push -> Add a record to the stack
+
+pop -> Remove the 'top' record in the stack
+
+peek -> Return the 'top' record without popping it
