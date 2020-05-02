@@ -152,3 +152,23 @@ Ways of organizing information with optimal 'runtime complexity' for adding or r
 Javascript natively implements several dara structures. `You will still be asked about 'inferior' data structures`
 
 Functionality of a JS Array (big, small thing is queue does)
+
+### Queue
+
+Ticketing Counter
+
+Person -> Person -> Person -> Person -> Person
+
+Enqueuing or adding
+
+Dequeuing or removing
+
+FIFO (First In First Out)
+
+```
+Queue               Array Equivalent
+---------------------------------------
+Add to queue        array.unshift();
+---------------------------------------
+Remove from queue   array.pop();
+```
