@@ -137,6 +137,18 @@ function steps1(n) {
 
 `this would be n^2, or quadratic runtime`
 
+---
+
 ## memoization
 
 Store the arguments of each function call along with the result. If the function is called again with the same arguments, return the precomputed result, rather than running the function again
+
+---
+
+## Data Structure
+
+Ways of organizing information with optimal 'runtime complexity' for adding or removing records
+
+Javascript natively implements several dara structures. `You will still be asked about 'inferior' data structures`
+
+Functionality of a JS Array (big, small thing is queue does)
