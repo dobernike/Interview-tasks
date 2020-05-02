@@ -28,6 +28,67 @@ How much more processing power/time is required to run you algorithm if we doubl
 
 `2^n` -> If you add a 'single' element to a collection, the processing power required doubles
 
+## Big 'O' Notation
+
+`O(1)` -> Contant
+
+```js
+function exampleConstantFunc(n) {
+    return n * n;
+}
+```
+
+`O(n)` -> Linear
+
+```js
+function exampleLinear(n) {
+    for (var i = 0; i < n; i++) {
+        console.log(i);
+    }
+}
+```
+
+`O(log(n))` -> Logarithmic
+
+```js
+function log(n) {
+    for (let i = 1; i < n; i *= 2) {
+        const result = i;
+        console.log(result);
+    }
+}
+```
+
+`O(n^2)` -> Quadratic
+
+```js
+for (int i = 0; i < n; i += c) {
+    for (int j = 0; j < n; j += c) {
+    // some O(1) expressions
+    }
+}
+```
+
+## Identifying Runtime Complexity
+
+iterating with a simple for loop through a single collection? -> Probably `O(n)`
+
+Iterating through half a collection? -> Still `O(n)`. There are no contants in runtime
+
+Iterating through two 'different' collections with separate for loops? -> `O(n + m)`
+
+Two nested for loops iterating over the same collection? -> `O(n^2)`
+
+Two nested for loops iterating over different collections? -> `O(n*m)`
+
+Sorting? -> `O(n*log(n))`
+
+Searching a sorted array -> `O(log(n))`
+
+## Space Complexity is a thing too
+
+how much more memory is required by doubling the problem set?
+
 ## Exaples:
 
 ### String reverse
