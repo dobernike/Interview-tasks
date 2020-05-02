@@ -179,10 +179,36 @@ add RecordFirst -> remove RecordFirst
 
 FILO (First In Last Out)
 
-#### methods
+methods:
 
 push -> Add a record to the stack
 
 pop -> Remove the 'top' record in the stack
 
 peek -> Return the 'top' record without popping it
+
+### Linked Lists
+
+```
+    Head                                           Tail
+['Hi' | 0-]->['There' | 0-]->['How`re' | 0-]->['You?' | 0-]-> null
+
+['Hi' | 0-]->   -> node
+['There']       -> data
+[| 0-]->        -> reference to next node
+```
+
+```js
+const nodeOne = {
+    data: 123,
+};
+
+const nodeTwo = {};
+
+nodeOne.next = nodeTwo;
+```
+
+```
+[123 | 0-]->[456 | 0-]->
+ data next   data next
+```
