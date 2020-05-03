@@ -1,10 +1,24 @@
 <head>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+        crossorigin="anonymous"
+    ></script>
 </head>
 <body>
-  <h1>Click the button</h1>
-  <button>Me!</button>
-  <script>
-    
-  </script>
+    <h1>Click the button</h1>
+    <button>Me!</button>
+    <script>
+        $('button').on('click', () => {
+            console.log('hello');
+        });
+
+        $('button').on('click', () => {
+            console.log('There!');
+        });
+
+        $('button').trigger('click');
+
+        $('button').off('click');
+    </script>
 </body>
