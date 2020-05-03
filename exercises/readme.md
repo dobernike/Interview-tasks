@@ -212,3 +212,50 @@ nodeOne.next = nodeTwo;
 [123 | 0-]->[456 | 0-]->
  data next   data next
 ```
+
+### Tree
+
+```
+        ---[20]---      <- Node
+        |   |    |
+       [0] [40] [-15]       |----------|
+    ----|----     |         |   data   |
+    |   |   |     |         |----------|
+  [12] [-2] [1]  [-2]       |children[]|
+                            |----------|
+                               A node
+```
+
+20 is the parent of 0, 40, and -15
+
+12 and -2 are siblings
+
+Iterating through a tree = traversal
+
+There are different orders of traversal
+
+-   Breadth-First Traversal
+
+```
+20, 0, 40, -15, 12, -2, 1, -2
+
+Start here ->     ---[20]---
+                  |   |    |
+Then here ->     [0] [40] [-15]
+               ----|----    |
+               |   |   |    |
+Then here -> [12] [-2] [1] [-2]
+```
+
+-   Depth-First Traversal
+
+```
+20, 0, 12, -2, 1, 40, -15, -2
+
+        ---[20]---
+        |   |    |
+       [0] [40] [-15]
+    ----|----     |
+    |   |   |     |
+  [12] [-2] [1]  [-2]
+```
