@@ -306,3 +306,86 @@ loop(value) { value > left.value; value < right.value }
                       |       |
                      [17]    [99]
 ```
+
+# How would you design Twitter? or some big tech
+
+## High Level Notes
+
+-   There is no right answer
+
+-   Every interviewer will expect a defferent answer
+
+ask what interviewer want to disqus
+
+-   Focus is usually on the data model
+
+build and storage twit or users + compare with web
+
+-   Dont mention specific technologies
+
+Needs framework for build ui tweets fast and for this i choose framework (angular, react, vue)
+
+-   Draw stuff
+
+draw diagramm
+
+-   Talk
+
+No silence! Ask questions!
+
+## Stratagy
+
+-   Identify Two Core Features
+
+Draw sketch.
+
+Boxes (Trending, user feeds, follower, head)
+
+Tweet
+
+-   Possible Implementation
+
+What does then click on tweet
+
+-   Identify and Address Difficulties
+
+Tweeting:
+
+What does a tweet look like in the DB?
+
+How to make the '#topic' and '@mention' systems?
+
+How to implement retweets?
+
+Feed:
+
+How to show interesting tweets at top of feed?
+
+-   Solutions for scaling
+
+Scalling for Users:
+
+    Caching:
+
+```
+    User
+      |
+    Server  -> Memory Store (memChached or Redis)
+      |
+    Database
+```
+
+    Deployment Options:
+
+```
+         User
+          |
+    Load Balanser
+    |     |       |
+  Server Server Server
+    |      |        |
+    _______|_________
+           |
+           DB
+
+```
