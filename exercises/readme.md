@@ -389,3 +389,12 @@ Scalling for Users:
            DB
 
 ```
+
+# Sorting Algorithm
+
+```
+    Name        Worst Case Runtime  Difficulty
+ BubbleSort             n^2           easiest
+SelectionSort           n^2           easiest
+  MergeSort           n*log(n)        medium
+```
